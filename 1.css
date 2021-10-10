@@ -1,0 +1,197 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-family: roboto;
+}
+
+a {text-decoration: none;}
+
+header {
+	background-color: #f5f5f5;
+	width: 100%;
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(161,161,161,1);
+	-moz-box-shadow: 0px 4px 5px 0px rgba(161,161,161,1);
+	box-shadow: 0px 4px 5px 0px rgba(161,161,161,1);
+}
+
+header .all-header {
+	width: 60%;
+	margin: 0px auto;
+	padding-bottom:30px;
+
+}
+
+header .all-header .lang {
+	float:right;
+	margin-right: 5%;
+	padding: 5px;
+}
+
+header .all-header .lang a {
+	font-weight: bold;
+	color: #a3a3a3;
+	margin-left: 5px;
+	transition: all .5s ease;
+}
+
+header .all-header .lang a.active {
+	border-bottom: 3px solid black;
+	color:black;
+}
+
+header .all-header .lang a:hover {
+	border-bottom: 3px solid black;
+	color:black;
+}
+
+header .all-header .header-main {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+header .all-header .header-main .logo {
+	background-color: green;
+}
+
+header .all-header .header-main  img {
+	height: 100%;
+	cursor: pointer;
+}
+
+header .all-header .header-main input {
+	border-radius: 6px;
+	border: 0px;
+	height: 35px;
+	text-indent: 9px;
+	outline: none;
+	background-color: #dbdbdb;
+	padding: 7px;
+}
+
+header .all-header .header-main a.UploadSong {
+	color:black;
+	font-weight: bold;
+	transition: all .3s ease-in-out;
+}
+header .all-header .header-main a.UploadSong:hover {
+	color:#d69320;
+}
+
+header .all-header .header-main .btn {
+	border-radius: 2px;
+	border: 2px solid black;
+	padding: 10px;
+	color: black;
+	font-weight: bold;
+	background-color :whitesmoke;
+}
+
+header .all-header .header-main .btn:hover {
+	background-color: black;
+	color: whitesmoke;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+#reg {
+	background-color: black;
+	color: whitesmoke;
+}
+
+.main {
+	width: 60%;
+	margin: 40px auto;
+}
+
+.main .row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main .row .block {
+	padding: 10px;
+	margin-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.main .row .block img {
+	width: 250px;
+	height: 200px;
+}
+
+.main .row .block p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.main .row .block p.musicname {
+	font-weight: normal;
+	font-size: 17px;
+	color:#525252;
+}
+
+.main > h3 {
+	margin-top: 30px;
+}
+
+.main h3 span {
+	height: 2px;
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-right: 15px;
+	margin-left: 7px;
+	width: 30px;
+	background: black;
+}
+
+.main .row .block:hover .button-play {
+	opacity: 1;
+}
+
+.main .row .block .button-play {
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	text-align: center;
+	background-color: #363636;
+	border-radius: 5px;
+	position: absolute;
+	right: -25px;
+	bottom: 90px;
+	cursor: pointer;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+
+.main .row .block .button-play img {
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 768px) and (min-width: 414px){
+	header .all-header .header-main {
+		width:100%;
+		flex-direction: column;
+	}
+
+	header .all-header .header-main img {
+		margin-bottom: 10px;
+		width: 20%;
+		height: 20%;
+	}
+
+	header .all-header .header-main input,
+	header .all-header .header-main .UploadSong,
+	header .all-header .header-main div {margin-top: 15px}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	header .all-header, header .all-header .header-main {
+		width: 95%
+	}
+}
